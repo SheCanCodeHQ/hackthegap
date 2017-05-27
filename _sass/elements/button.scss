@@ -1,0 +1,19 @@
+.button {
+    text-decoration: none;
+    padding: 0.5rem;
+    border: $color-back 0.1rem solid;
+    border-radius: 0.5rem;
+
+    &.large {
+        font-size: 1.75rem;
+        padding: 0.75rem;
+    }
+    padding: 0.5rem;
+
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+        background-color: $color-back;
+        color: $color-primary;
+    }
+}

@@ -12,11 +12,13 @@ layout: default
     </div>
 </nav>
 <div class="fab nav-button">
-    X
+    <div class="fab-bar"></div>
+    <div class="fab-bar"></div>
+    <div class="fab-bar"></div>
 </div>
 <div class="hero">
     <div class="hero-main">
-        <img src="/img/shecancode.png"/>
+        <img src="{{ site.baseurl }}/img/shecancode.png"/>
         <h1>DREAM IT.</h1>
         <h1>BUILD IT.</h1>
         <h1>SHARE IT.</h1>
@@ -24,3 +26,7 @@ layout: default
         <a class="button large" href="#">Register Now!</a>
     </div>
 </div>
+
+<section class="main">
+    {{ content }}
+</section>

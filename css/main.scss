@@ -3,17 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Work+Sans:500,700');
 
-$color-primary: #FC00FF;
-$color-secondary: #00DBDE;
-$color-fore: #202A25;
-$color-back: #EEEEEE;
-$color-accent: #5F4BB6;
-$color-accent-2: #86A5D9;
+@import "defaults";
 
-$font-emphasis: "Space Mono", Consolas, Monaco, monospace;
-$font-body: "Work Sans", Arial, sans-serif;
-
+@import "typography";
 @import "normalise";
-@import "button";
-@import "nav";
-@import "hero";
+@import "elements/_all";
+@import "components/_all";

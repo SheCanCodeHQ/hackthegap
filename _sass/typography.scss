@@ -1,0 +1,30 @@
+.container {
+    h1,h2,h3,h4,h5,h6 {
+        font-family: $font-emphasis;
+    }
+
+    @for $i from 1 through 6 {
+        h#{$i} {
+            // multiply size from x1 to x4 depending on heading lvl.
+            $factor: 4 - $i;
+            @if ($factor < 1) {
+                $factor: 1;
+            }
+            font-size: $font-base-size * $factor;
+            padding: ($factor * 0.1rem) 0;
+        }
+    }
+
+    p, li, a {
+        font-size: $font-base-size * 1.5;
+    }
+    
+    p {
+        padding: 0.1rem 0;
+    }
+
+    a {
+        color: inherit;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+}
