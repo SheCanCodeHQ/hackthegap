@@ -9,7 +9,7 @@
     bottom: 1.5rem;
     font-size: 1.8rem;
 
-    box-shadow: 0.1rem 0.1rem 1rem $color-fore;
+    box-shadow: 0 0 1rem $color-fore;
 
     // center content
     //display: flex;
@@ -25,7 +25,7 @@
     .fab-bar {
         width: 60%;
         height: 10%;
-        background-color: $color-back;
+        background-color: $color-fore;
         transition: all 0.25s ease-in-out;
         position: absolute;
         margin: 0;
